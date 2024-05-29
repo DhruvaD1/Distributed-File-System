@@ -1,4 +1,4 @@
-This is a distributed file system that is similar to Hadoop. It is fault tolerant for up to 3 machines. The data replication is done randomly. It uses a master node and multiple data nodes and a client for the user to interact with.
+This is a distributed file system that is similar to Hadoop. It is fault tolerant for up to 3 machines. The data replication is done randomly. It uses a master node and multiple data nodes and a client for the user to interact with.  
 
 
 ### How to Run

@@ -1,6 +1,3 @@
-
-This is a distributed file system similar to HDFS. It has one Master (NameNode) and multiple Storages (DataNode), as well as a client for interaction. When given a SIGINT, it will dump the namespace information (dir_tree and file_tree) and reload it when fired up next time (fs.img). Data replication is done randomly, similar to HDFS. The data is sent to the first storage, which then sends it to the next one and so on. Reading is done in a similar manner - it will contact the first storage for the block, and if it fails, it will try the second and so on. This system uses the RPyC library in Python for RPC.
-
 This is a distributed file system that is similar to Hadoop. It is fault tolerant for up to 3 machines. The data replication is done randomly. It uses a master node and multiple data nodes and a client for the user to interact with.
 
 

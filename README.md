@@ -19,7 +19,7 @@ docker pull 33123998/datanode
 docker run --rm -i -t -p 8888:8888 33123998/datanode
 ``` 
   
-### Example Commands
+### Commands
 ```sh
 Initialize the DFS
 $ python3 client.py init block_size replication_Factor

@@ -3,13 +3,13 @@ This is a distributed file system that is similar to Hadoop. It is fault toleran
 
 ### How to Run
 - Install requirements
-* run in namenode server
+* run in master server
 
 ```
 docker pull 33123998/namenode
 docker run --rm -i -t -p 2131:2131 33123998/namenode
 ```
-* run in datanode server
+* run in othernode server
 
 ```
 docker pull 33123998/datanode

@@ -21,36 +21,35 @@ docker run --rm -i -t -p 8888:8888 33123998/datanode
   
 ### Example Commands
 ```sh
-1) Initialize the DFS
+Initialize the DFS
 $ python3 client.py init block_size replication_Factor
 
-2) Make new directory in DFS
+Make new directory in DFS
 $ python3 client.py mkdir /dir1/dir2
 
-3) Remove directory in DFS
+Remove directory in DFS
 $ python3 client.py rmdir /dir1/dir2
 
-4) List directory in DFS
+List directory in DFS
 $ python3 client.py ls /dir1/dir2
 
-5) Download file from DFS to destination file in local machine
+Download file from DFS to destination file in local machine
 $ python3 client.py read /dir1/file1 dest
 
-6) Upload file from local machine to DFS
+Upload file from local machine to DFS
 $ python3 client.py write source /dir1/dir2/
 
-7) Create empty file in DFS with one block size
+Create empty file in DFS with one block size
 $ python3 client.py create file /dir1/dir2/
 
-8) Delete file from DFS
+Delete file from DFS
 $ python3 client.py delete /dir1/file1
 
-9) Copy file from one directory to other directory in DFS
+Copy file from one directory to other directory in DFS
 $ python3 client.py cp /dir1/file1 /dir1/dir2/file2
 
-10) Copy file from one directory to other directory in DFS
+Copy file from one directory to other directory in DFS
 $ python3 client.py mv /dir1/file1 /dir1/dir2/file2
 
-11) Metadata of files in DFS
+Metadata of files in DFS
 $ python3 client.py info /dir1/file1
-\
